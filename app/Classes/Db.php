@@ -1,5 +1,6 @@
 <?php
-namespace app;
+namespace App\Classes;
+
 class Db
 {
     private $conn;
@@ -8,8 +9,8 @@ class Db
     {
         $servername = "localhost";
         $username = "root";
-        $password = "";
-        $dbname = "bookapi";
+        $password = "root";
+        $dbname = "bookxchange";
 
         $this->conn = mysqli_connect($servername, $username, $password, $dbname);
 
